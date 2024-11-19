@@ -1,0 +1,148 @@
+body {
+    background-color: aqua;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* navbar section start */
+
+nav {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    background-color: black;
+}
+
+.spotify-logo img {
+    width: 90px;
+    height: 25px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: .95rem;
+    margin-left: 15px;
+    list-style-type: none;
+}
+
+a:hover {
+    /* border: 1px solid aquamarine; */
+    border-bottom: 3px solid aquamarine;
+    border-radius: 5px;
+}
+
+/* navbar section end */
+
+/* main section songs list section start   */
+
+
+.container {
+    display: flex;
+    margin: 23px auto;
+    width: 80%;
+    border-radius: 12px;
+    padding: 25px;
+    min-height: 71.5vh;
+    background-color: black;
+    color: white;
+    background-image: url('images/HD-wallpaper-music-lover-3d-girl-cg-music-black-beauty-abstruct-blue.jpg');
+    background-size: cover;
+}
+
+.songItem_Container {
+    margin-top: 50px;
+}
+
+.songItems {
+    height: 45px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: aqua;
+    color: black;
+    margin: 12px 0px;
+    border-radius: 29px;
+}
+
+.songItems:hover {
+    background-color: black;
+    color: white;
+}
+
+.songItems img {
+    width: 35px;
+    margin: 0 10px;
+    border-radius: 18px;
+}
+
+.timestamp {
+    margin: 0 23px;
+
+}
+
+.timestamp i {
+    cursor: pointer;
+
+}
+
+/* main section songs list section end  */
+
+
+/*  bottom section start  */
+
+.bottom {
+    position: sticky;
+    height: 125px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icons {
+    margin-top: 10px;
+    /* row-gap: 30px; */
+}
+
+.icons i {
+    font-size: 35px;
+    cursor: pointer;
+}
+
+#myProgressBar {
+    width: 80vw;
+    cursor: pointer;
+}
+
+.song_Info {
+    position: absolute;
+    left: 10vw;
+    margin-top: 25px;
+}
+
+.song_Info p {
+    font-family: sans-serif;
+    font-size: .6rem;
+    font-weight: 700;
+}
+
+.song_Info img {
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
+
+/*  bottom section end */
